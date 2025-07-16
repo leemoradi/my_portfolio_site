@@ -155,3 +155,53 @@ footer a:focus {
     font-size: 0.95rem;
   }
 }
+/* Projects page styling */
+.projects-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.projects-container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 2.5rem 2rem; /* Increased padding for more space */
+  margin-bottom: 2.5rem; /* More space between cards */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.project-card p,
+.project-card ol {
+  color: #555;
+  line-height: 1.8;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.project-card ol {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
