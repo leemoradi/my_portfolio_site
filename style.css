@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.logo {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  padding: 20px 0 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+p, a, li, button, input, label {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #082267;
+  color: #fff;
+  padding: 28px 0 18px 0; /* Increased top and bottom padding */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+nav {
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #082267;
+}
+
+/* Accent color for buttons and links */
+.btn {
+  display: inline-block;
+  background: #082267;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.btn:hover,
+.btn:focus {
+  background: #082267;
+  color: #082267;
+}
+
+main.container {
+  background: #fff;
+  margin-top: -30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 40px 30px 30px 30px;
+}
+
+.about-preview,
+.projects-preview {
+  margin-bottom: 36px;
+}
+
+.about-preview h3,
+.projects-preview h3 {
+  margin-top: 0;
+  color: #082267;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.link {
+  color: #082267;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.link:hover,
+.link:focus {
+  color: #082267;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 0;
+  background-color: #082267;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #082267;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .container, main.container {
+    width: 98%;
+    padding: 18px 5px;
+  }
+  .hero {
+    padding: 36px 0 24px 0;
+  }
+  .btn {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+}
