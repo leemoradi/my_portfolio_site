@@ -8,33 +8,55 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
-    <h1>Projects</h1>
-    <section>
-      <h2>Voting Analysis</h2>
+    <section class="project">
+      <h1>My Projects</h1>
+
+      <h2>Voting Analysis: Georgia and Texas</h2>
       <p>
-        This project analyzes voting trends in Georgia and Texas using Python, Excel, and data visualization.
+        This project analyzes voting trends in Georgia and Texas using Python, Excel, and data visualization tools. 
+        The goal was to better understand partisan shifts and voter turnout over time.
       </p>
-      <a href="projects/voting-analysis/index.html" target="_blank">View Voting Analysis →</a>
+
+      <h3>Steps I Took:</h3>
+      <ul>
+        <li>Collected county-level election data for Georgia and Texas</li>
+        <li>Used Python and <code>pandas</code> to clean and analyze the datasets</li>
+        <li>Calculated vote percentages for each major party by year</li>
+        <li>Created visualizations with <code>matplotlib</code></li>
+        <li>Exported results to Excel and included data visualization in the final output</li>
+        <li>Deployed a live demo of the project using GitHub Pages</li>
+      </ul>
+
+      <p>
+        🔗 <a href="https://github.com/leemoradi/voting-analysis" target="_blank">View project code on GitHub</a><br>
+        🌐 <a href="https://leemoradi.github.io/voting-analysis/" target="_blank">View live project</a>
+      </p>
     </section>
   </main>
 
   <footer>
     <div class="container">
       <p>© 2025 Leah Moradi &mdash; All Rights Reserved</p>
+      <p>
+        <a href="mailto:leahjmoradi@gmail.com">leahjmoradi@gmail.com</a>
+      </p>
     </div>
   </footer>
 </body>
 </html>
+
 
 
