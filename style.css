@@ -1,29 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Quicksand:wght@400;600;700&family=Playfair+Display:wght@700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Source Serif Pro', 'Quicksand', serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f8f6fa;
   color: #222;
 }
 
 .logo {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 2.7rem;
   letter-spacing: 2px;
-  padding: 20px 0 10px 0;
-  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
+  color: #a06ab4;
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
+  color: #a06ab4;
+  margin-bottom: 0.5em;
 }
 
-p, a, li, button, input, label {
-  font-family: 'Montserrat', sans-serif;
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2.2rem;
 }
 
 .container {
@@ -33,14 +37,14 @@ p, a, li, button, input, label {
 }
 
 header {
-  background-color: #082267;
-  color: #fff;
-  padding: 28px 0 18px 0; /* Increased top and bottom padding */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  background-color: #fff;
+  color: #a06ab4;
+  padding: 38px 0 0 0; /* Increased top padding to move nav lower */
+  box-shadow: 0 2px 8px rgba(160,106,180,0.08);
 }
 
 nav {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .nav-links {
@@ -56,22 +60,26 @@ nav {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #a06ab4;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.1rem;
   transition: color 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  color: #082267;
+  color: #e49ab0;
+  border-bottom: 2px solid #e49ab0;
+  background: none;
 }
 
 /* Accent color for buttons and links */
 .btn {
   display: inline-block;
-  background: #082267;
+  background: linear-gradient(90deg, #e49ab0 0%, #a06ab4 100%);
   color: #fff;
   padding: 12px 32px;
   border-radius: 25px;
@@ -79,60 +87,140 @@ nav {
   font-weight: 600;
   font-size: 1rem;
   transition: background 0.2s, color 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 8px rgba(160,106,180,0.07);
+  border: none;
 }
 
 .btn:hover,
 .btn:focus {
-  background: #082267;
-  color: #082267;
+  background: linear-gradient(90deg, #a06ab4 0%, #e49ab0 100%);
+  color: #fff;
 }
 
 main.container {
   background: #fff;
-  margin-top: -30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-  padding: 40px 30px 30px 30px;
+  margin-top: -10px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(160,106,180,0.09);
+  padding: 48px 36px 36px 36px;
 }
 
-.about-preview,
-.projects-preview {
-  margin-bottom: 36px;
+section {
+  margin-bottom: 2.5rem;
 }
 
-.about-preview h3,
-.projects-preview h3 {
-  margin-top: 0;
-  color: #082267;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
+section.contact {
+  background: #f4e1f7;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(160,106,180,0.07);
+  padding: 32px 24px;
+  margin-bottom: 2.5rem;
 }
 
-.link {
-  color: #082267;
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.contact li {
+  margin-bottom: 1.1rem;
+  font-size: 1.08rem;
+}
+
+.contact a {
+  color: #a06ab4;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
 }
 
-.link:hover,
-.link:focus {
-  color: #082267;
+.contact a:hover {
+  color: #e49ab0;
   text-decoration: underline;
+}
+
+.project-card,
+.my-projects ul {
+  background: #f9f6fb;
+  border-radius: 14px;
+  padding: 2.2rem 1.7rem;
+  margin-bottom: 2.2rem;
+  box-shadow: 0 2px 8px rgba(160,106,180,0.05);
+}
+
+.my-projects h2 {
+  margin-top: 0;
+}
+
+.my-projects .btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #e49ab0 0%, #a06ab4 100%);
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(160,106,180,0.07);
+  border: none;
+  margin-top: 1.2rem;
+}
+
+.my-projects .btn:hover,
+.my-projects .btn:focus {
+  background: linear-gradient(90deg, #a06ab4 0%, #e49ab0 100%);
+  color: #fff;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  font-family: 'Montserrat', 'Source Serif Pro', 'Quicksand', serif;
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+}
+
+p, a, button, input, label {
+  font-family: 'Montserrat', 'Source Serif Pro', 'Quicksand', serif;
+  font-size: 1.08rem;
+}
+
+.about-me p,
+.experience p,
+.campus-involvement ul,
+.my-projects ul {
+  line-height: 1.8;
+}
+
+.about-me p,
+.experience p,
+.campus-involvement ul,
+.contact ul {
+  margin-top: 0.8rem;
+}
+
+.title-section {
+  padding: 48px 0 64px 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(160,106,180,0.04);
 }
 
 footer {
   text-align: center;
   padding: 24px 0;
-  background-color: #082267;
-  color: #fff;
+  background-color: #f4e1f7;
+  color: #a06ab4;
   margin-top: 40px;
   font-size: 1rem;
+  border-radius: 0 0 18px 18px;
 }
 
 footer a {
-  color: #082267;
+  color: #a06ab4;
   text-decoration: none;
   margin-left: 8px;
 }
@@ -154,54 +242,7 @@ footer a:focus {
     padding: 10px 18px;
     font-size: 0.95rem;
   }
-}
-/* Projects page styling */
-.projects-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.projects-container h1 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.project-card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 2.5rem 2rem; /* Increased padding for more space */
-  margin-bottom: 2.5rem; /* More space between cards */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.project-card h2 {
-  margin-top: 0;
-  color: #333;
-}
-
-.project-card p,
-.project-card ol {
-  color: #555;
-  line-height: 1.8;
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
-}
-
-.project-card ol {
-  padding-left: 1.5rem;
-  margin-top: 1rem;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 1rem;
-  text-decoration: none;
-  color: #007acc;
-  font-weight: bold;
-}
-
-.project-card a:hover {
-  text-decoration: underline;
+  section.contact {
+    padding: 18px 8px;
+  }
 }

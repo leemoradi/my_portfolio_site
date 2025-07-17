@@ -1,0 +1,13 @@
+# Ignore macOS hidden files
+.DS_Store
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environments (optional)
+.venv/
+env/
+
+# Optional: Ignore generated charts if you don't want to upload them
+# *.png
