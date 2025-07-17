@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voting Analysis Project | Leah Moradi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="projects-container">
+    <h1>Voting Analysis: Georgia & Texas</h1>
+    
+    <div class="project-intro">
+      <p>
+        This project explores partisan shifts and voter turnout in Georgia and Texas over recent election cycles. 
+        Using publicly available voting data, I cleaned and organized the information in Excel, wrote a Python script 
+        to calculate vote percentages, and visualized the results using multiple comparative charts and analyses.
+      </p>
+      <p>
+        Georgia and Texas were chosen due to their contrasting electoral trends: Georgia's recent swing toward 
+        Democratic candidates and Texas's evolving but traditionally Republican base. By analyzing this data over time, 
+        the project sheds light on broader regional political dynamics and highlights the importance of voter engagement 
+        and demographic shifts.
+      </p>
+    </div>
+
+    <h3>Key Findings:</h3>
+    <ul>
+      <li><strong>Georgia 2020 Result:</strong> Biden won with 49.5% vs Trump's 49.3% (0.2% margin)</li>
+      <li><strong>Texas 2020 Result:</strong> Trump won with 52.1% vs Biden's 46.9% (5.2% margin)</li>
+      <li><strong>Most Competitive County:</strong> Williamson County, TX (49.8% Biden vs 48.5% Trump)</li>
+      <li><strong>County Analysis:</strong> 89 Georgia counties vs 45 Texas counties</li>
+      <li><strong>Note:</strong> Our county-level analysis shows different patterns than state-level results due to data source differences</li>
+    </ul>
+
+    <h3>Visualizations:</h3>
+    
+    <div class="visualization-section">
+      <h4>1. Actual 2020 Election Results</h4>
+      <img src="projects/voting-analysis/visualizations/actual_2020_results.png" alt="Actual 2020 election results showing Biden winning Georgia" class="project-image" />
+      <p>
+        These pie charts show the actual 2020 election results: <strong>Biden won Georgia</strong> with 49.5% of the vote 
+        compared to Trump's 49.3% (a 0.2% margin), while Trump won Texas with 52.1% compared to Biden's 46.9%. 
+        This visualization clearly demonstrates Georgia's historic swing toward Democratic candidates in 2020.
+      </p>
+    </div>
+
+    <div class="visualization-section">
+      <h4>2. Margin of Victory Analysis</h4>
+      <img src="projects/voting-analysis/visualizations/2020_margin_of_victory.png" alt="Margin of victory analysis for 2020 election" class="project-image" />
+      <p>
+        This bar chart shows the margin of victory (Biden percentage minus Trump percentage) for each state. 
+        Georgia shows a narrow Biden victory (+0.2%), while Texas shows a clear Trump victory (-5.2%). 
+        The visualization highlights how Georgia became a competitive swing state in 2020.
+      </p>
+    </div>
+
+    <div class="visualization-section">
+      <h4>3. Vote Percentages by Candidate (State Level)</h4>
+      <img src="projects/voting-analysis/vote_percentages_chart.png" alt="Vote percentages comparison between Georgia and Texas" class="project-image" />
+      <p>
+        This grouped bar chart compares the percentage of votes received by each major candidate (Biden, Trump, Jorgensen) 
+        in Georgia and Texas during the 2020 election. It visually highlights the partisan differences between these 
+        contrasting states, showing how each candidate performed at the state level.
+      </p>
+    </div>
+
+    <div class="visualization-section">
+      <h4>4. County-Level Biden vs Trump Scatter Plot</h4>
+      <img src="projects/voting-analysis/visualizations/county_biden_vs_trump.png" alt="County-level Biden vs Trump vote percentages scatter plot" class="project-image" />
+      <p>
+        This scatter plot shows the relationship between Biden and Trump vote percentages across all counties in Georgia and Texas. 
+        Each point represents a county, with Georgia counties in blue and Texas counties in red. The diagonal line represents 
+        equal vote share. This visualization reveals the distribution of partisan support at the county level and shows 
+        which counties were most competitive.
+      </p>
+    </div>
+
+    <div class="visualization-section">
+      <h4>5. County Vote Distributions by State</h4>
+      <img src="projects/voting-analysis/visualizations/county_vote_distributions.png" alt="County vote distributions for Georgia and Texas" class="project-image" />
+      <p>
+        These histograms show the distribution of Biden and Trump vote percentages across counties in Georgia and Texas. 
+        They reveal the clustering of partisan support and highlight the different electoral landscapes in each state. 
+        Georgia shows more variation in county-level support, while Texas demonstrates stronger Republican dominance.
+      </p>
+    </div>
+
+    <div class="visualization-section">
+      <h4>6. County Comparison Chart</h4>
+      <img src="projects/voting-analysis/visualizations/county_comparison.png" alt="Number of counties comparison between Georgia and Texas" class="project-image" />
+      <p>
+        This bar chart compares the number of counties in Georgia (89) and Texas (45), providing context for the 
+        administrative size of each state. This information is crucial for understanding electoral dynamics and 
+        data interpretation across different state structures.
+      </p>
+    </div>
+
+    <div class="visualization-section">
+      <h4>7. Correlation Matrix: County-Level Voting Patterns</h4>
+      <img src="projects/voting-analysis/visualizations/county_correlation_matrix.png" alt="Correlation matrix of county-level voting patterns" class="project-image" />
+      <p>
+        This heatmap displays the correlation matrix between key county-level voting variables: <strong>Biden_pct</strong> 
+        (Biden vote percentage), <strong>Trump_pct</strong> (Trump vote percentage), <strong>Jorgensen_pct</strong> 
+        (Jorgensen vote percentage), <strong>total_votes</strong> (total votes cast), <strong>margin</strong> 
+        (absolute difference between Biden and Trump percentages), <strong>biden_advantage</strong> (Biden percentage 
+        minus Trump percentage), and <strong>total_votes_log</strong> (logarithm of total votes). The analysis reveals 
+        strong negative correlations between Biden and Trump support (-1.00), indicating counties that strongly support 
+        one candidate tend to weakly support the other. The matrix also shows relationships between vote totals and 
+        candidate support, providing insights into how county size relates to partisan preferences.
+      </p>
+    </div>
+
+    <h3>Methodology:</h3>
+    <ol>
+      <li>Found and downloaded county-level election data for Georgia and Texas from public sources.</li>
+      <li>Cleaned and formatted the data in Excel, standardizing state and county names.</li>
+      <li>Used Python to process the data and calculate vote percentages by party for each county.</li>
+      <li>Created multiple visualizations showing different aspects of the electoral landscape.</li>
+      <li>Analyzed county-level patterns to identify competitive races and partisan trends.</li>
+      <li>Built a comprehensive webpage to present the analysis and findings.</li>
+    </ol>
+
+    <h3>Technical Skills Demonstrated:</h3>
+    <ul>
+      <li><strong>Data Cleaning:</strong> Excel and Python for data standardization and validation</li>
+      <li><strong>Statistical Analysis:</strong> Vote percentage calculations and correlation analysis</li>
+      <li><strong>Data Visualization:</strong> Multiple chart types using matplotlib and seaborn</li>
+      <li><strong>Web Development:</strong> HTML/CSS for project presentation</li>
+      <li><strong>Geographic Analysis:</strong> County-level electoral mapping and comparison</li>
+    </ul>
+
+    <p>
+      <a href="https://github.com/leemoradi/voting-analysis" target="_blank" class="btn">View Code on GitHub</a>
+    </p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Leah Moradi — All Rights Reserved</p>
+      <p><a href="mailto:leahjmoradi@gmail.com">leahjmoradi@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html> 

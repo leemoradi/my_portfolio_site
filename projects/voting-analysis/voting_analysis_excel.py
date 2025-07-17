@@ -21,10 +21,11 @@ def main():
     filtered_df = df[df['state'].isin(states_of_interest)]
 
     # Count counties in each state
-    print(f"\nNumber of counties in GEORGIA and TEXAS: {filtered_df['state'].value_counts().to_dict()}")
+    # Ensure filtered_df['state'] is a pandas Series, not a numpy array
+    state_counts = pd.Series(filtered_df['state']).value_counts()
+    print(f"\nNumber of counties in GEORGIA and TEXAS: {state_counts.to_dict()}")
 
     # --- Chart 1: Number of Counties ---
-    state_counts = filtered_df['state'].value_counts()
     sns.barplot(
         x=state_counts.index,
         y=state_counts.values,
@@ -74,8 +75,12 @@ def main():
     plt.show()
 
     # Fill missing values with zero for all candidate columns
-    for col in ['biden_official', 'trump_official', 'jorgensen_official']:
-        filtered_df[col] = filtered_df[col].fillna(0)
+    filtered_df[['biden_official', 'trump_official', 'jorgensen_official']] = (
+        pd.DataFrame(filtered_df[['biden_official', 'trump_official', 'jorgensen_official']]).fillna(0)
+    )
+
+    # Save vote percentages for future analysis
+    vote_percentages.to_csv("vote_percentages.csv", index=False)
 
     print(vote_percentages)
     print("\nCount of non-NaN Jorgensen votes by state:")
@@ -83,4 +88,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

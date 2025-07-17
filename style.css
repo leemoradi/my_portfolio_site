@@ -105,6 +105,15 @@ main.container {
   padding: 48px 36px 36px 36px;
 }
 
+.projects-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 32px 48px 32px; /* Added generous padding around the projects page */
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(160,106,180,0.09);
+}
+
 section {
   margin-bottom: 2.5rem;
 }
@@ -187,6 +196,41 @@ li {
 p, a, button, input, label {
   font-family: 'Montserrat', 'Source Serif Pro', 'Quicksand', serif;
   font-size: 1.08rem;
+}
+
+/* Visualization styles */
+.visualization-section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(160,106,180,0.08);
+  border-left: 4px solid #a06ab4;
+}
+
+.visualization-section h4 {
+  color: #a06ab4;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visualization-section p {
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: #555;
 }
 
 .about-me p,
