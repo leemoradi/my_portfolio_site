@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Analyzer</title>
+    <link rel="stylesheet" href="debate-analyzer.css">
+</head>
+<body>
+    <div class="container" style="max-width:1200px;">
+        <div id="intro-section" style="margin-bottom:18px;">
+            <h1>Debate Analyzer & Argument Helper</h1>
+            <span class="intro-summary">
+                Instantly analyze debates for logical fallacies, build and check your own arguments, use classic logic templates, and save your work in one interactive and educational tool.
+            </span>
+        </div>
+        <div class="tool-sections-flex">
+            <div id="argument-helper-section" style="margin-top:0;">
+                <h2>Argument Helper</h2>
+                <p>Use this tool to build and check your argument for <span class="info-icon" data-tooltip="Validity: An argument is valid if the conclusion logically follows from the premises.">validity</span>, <span class="info-icon" data-tooltip="Soundness: An argument is sound if it is valid and all its premises are true.">soundness</span>, and <span class="info-icon" data-tooltip="Fallacy: A logical fallacy is an error in reasoning that weakens an argument. Common fallacies include ad hominem, straw man, slippery slope, and more.">fallacy</span></p>
+                <div class="argument-helper-flex">
+                    <div class="argument-form-col">
+                        <form id="argumentForm">
+                            <div id="premises-list">
+                                <div class="premise-row">
+                                    <label>Premise 1:</label>
+                                    <input type="text" class="premise-input" required>
+                                    <button type="button" class="remove-premise-btn" style="display:none;">Remove</button>
+                                    <label class="soundness-check"><input type="checkbox" class="soundness-checkbox"> Premise is true</label>
+                                </div>
+                            </div>
+                            <button type="button" id="addPremiseBtn">Add Premise</button><br>
+                            <div class="conclusion-row">
+                                <label for="conclusion">Conclusion:</label>
+                                <input type="text" id="conclusion" name="conclusion" required>
+                            </div>
+                            <button type="button" id="checkArgumentBtn">Check Argument</button>
+                        </form>
+                        <div id="argumentOutput"></div>
+                        <div id="argument-helper-actions" style="margin:16px 0 8px 0;">
+                            <button type="button" id="downloadPdfBtn" class="small-btn">Download as PDF</button>
+                            <button type="button" id="saveArgumentBtn" class="small-btn">Save Argument</button>
+                            <button type="button" id="loadArgumentBtn" class="small-btn">Load Argument</button>
+                        </div>
+                        <div id="loadModal" class="custom-modal" style="display:none;"></div>
+                    </div>
+                    <aside class="examples-sidebar">
+                        <button type="button" id="showTemplatesBtn" class="small-btn" style="width:100%;margin-bottom:16px;">Argument Templates</button>
+                        <div id="templatesModal" class="custom-modal" style="display:none;">
+                            <strong style="font-size:1.08em; color:#2c3e50; display:block; margin-bottom:10px;">Argument Templates</strong>
+                            <div class="template-list">
+                                <!-- Templates will be injected here by JS -->
+                            </div>
+                            <button type="button" id="closeTemplatesModal" class="small-btn" style="margin-top:10px;">Close</button>
+                        </div>
+                        <div id="examples-section" style="margin-bottom:8px; font-size:0.95em;">
+                            <strong style="font-size:0.97em;">Examples:</strong>
+                            <button type="button" class="example-btn small-btn" data-example="1">Classic Syllogism</button>
+                            <button type="button" class="example-btn small-btn" data-example="2">Unsound Argument</button>
+                            <button type="button" class="example-btn small-btn" data-example="3">Fallacy Example</button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <div id="debate-analyzer-section">
+                <h2>Debate Analyzer</h2>
+                <p>Paste a debate transcript below. The analyzer will highlight possible logical fallacies and rhetorical devices.</p>
+                <textarea id="debateInput" rows="10" placeholder="Paste debate text here..."></textarea>
+                <button id="analyzeBtn">Analyze</button>
+                <div id="output"></div>
+                <button id="sendToArgumentHelperBtn" style="display:none; margin-top:10px;">Send to Argument Helper</button>
+            </div>
+        </div>
+    </div>
+    <div id="modalOverlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(44,62,80,0.18); z-index:99;"></div>
+    <script src="debate-analyzer.js"></script>
+</body>
+</html> 

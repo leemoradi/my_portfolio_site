@@ -97,6 +97,36 @@ nav {
   color: #fff;
 }
 
+/* GitHub button styling */
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.github-icon {
+  flex-shrink: 0;
+}
+
+/* Resume section styling */
+.resume {
+  background: #f9f6fb;
+  border-radius: 14px;
+  padding: 2.2rem 1.7rem;
+  margin-bottom: 2.2rem;
+  box-shadow: 0 2px 8px rgba(160,106,180,0.05);
+}
+
+.resume .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.download-icon {
+  flex-shrink: 0;
+}
+
 main.container {
   background: #fff;
   margin-top: -10px;
