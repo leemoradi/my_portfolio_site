@@ -30,8 +30,9 @@ def create_county_vote_analysis():
                 alpha=0.7, color='red', s=50, label='Texas Counties')
     
     # Add diagonal line (equal vote share)
-    max_val = max(ga_tx_df['Biden_pct'].max(), ga_tx_df['Trump_pct'].max())
-    plt.plot([0, max_val], [0, max_val], 'k--', alpha=0.5, label='Equal Vote Share')
+    max_val = float(max(ga_tx_df['Biden_pct'].max(), ga_tx_df['Trump_pct'].max()))
+    x_vals = np.array([0, max_val])
+    plt.plot(x_vals, x_vals, 'k--', alpha=0.5, label='Equal Vote Share')
     
     plt.xlabel('Trump Vote Percentage (%)', fontsize=12)
     plt.ylabel('Biden Vote Percentage (%)', fontsize=12)
@@ -79,6 +80,7 @@ def create_county_vote_analysis():
     closest_races = ga_tx_df.nsmallest(10, 'margin')[['state', 'county_name', 'Biden_pct', 'Trump_pct', 'margin']]
     
     print("\n10 Closest County Races:")
+    # Print the 10 closest county races in a readable table format
     print(closest_races.to_string(index=False))
     
     return ga_tx_df
