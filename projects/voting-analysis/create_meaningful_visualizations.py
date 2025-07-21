@@ -76,11 +76,10 @@ def create_county_vote_analysis():
     print("Texas - Biden avg:", tx_data['Biden_pct'].mean(), "Trump avg:", tx_data['Trump_pct'].mean())
     
     # 4. Most competitive counties (closest races)
-    ga_tx_df['margin'] = abs(ga_tx_df['Biden_pct'] - ga_tx_df['Trump_pct'])
+    ga_tx_df['margin'] = (ga_tx_df['Biden_pct'] - ga_tx_df['Trump_pct']).abs()
     closest_races = ga_tx_df.nsmallest(10, 'margin')[['state', 'county_name', 'Biden_pct', 'Trump_pct', 'margin']]
-    
+
     print("\n10 Closest County Races:")
-    # Print the 10 closest county races in a readable table format
     print(closest_races.to_string(index=False))
     
     return ga_tx_df
