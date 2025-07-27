@@ -26,9 +26,10 @@ def main():
     out_cols = ['state', 'county_name', 'Biden_pct', 'Trump_pct', 'Jorgensen_pct', 'total_votes']
     out_df = df[out_cols].copy()
 
-    # Save to CSV
-    out_df.to_csv('county_vote_percentages.csv', index=False)
-    print('Saved county_vote_percentages.csv with', len(out_df), 'rows.')
+    # Save to CSV (ensure out_df is a DataFrame)
+    if isinstance(out_df, pd.DataFrame):
+        out_df.to_csv('county_vote_percentages.csv', index=False)
+        print('Saved county_vote_percentages.csv with', len(out_df), 'rows.')
 
 if __name__ == "__main__":
     main() 
