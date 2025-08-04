@@ -28,11 +28,11 @@ python live_update.py
 python monthly_reset.py
 ```
 
-## 📁 Simplified File Structure
+## 📁 Project Structure
 
 ```
 legislation-tracker/
-├── run.py                    # 🆕 Main interactive runner
+├── run.py                    # Main interactive runner
 ├── main_fast.py              # Bill fetching (with test data fallback)
 ├── realistic_committee_data.py # Committee data generation
 ├── combined_data_fetch.py    # Combined bill + committee fetching
@@ -52,22 +52,6 @@ legislation-tracker/
 │   └── script.js            # Frontend JavaScript
 └── README.md                # This file
 ```
-
-## 🗂️ File Consolidation
-
-**Removed redundant files:**
-- ❌ `committee_analysis.py` → ✅ Integrated into `realistic_committee_data.py`
-- ❌ `committee_analysis_fixed.py` → ✅ Integrated into `realistic_committee_data.py`
-- ❌ `bill_committee_analysis.py` → ✅ Not working, removed
-- ❌ `test_monthly_reset.py` → ✅ Integrated into main files
-- ❌ `smart_scheduler.py` → ✅ Redundant with `monthly_reset.py`
-- ❌ `debug_dates.py` → ✅ Temporary debug file, removed
-- ❌ `test_conversion.py` → ✅ Temporary test file, removed
-- ❌ `scheduler.py` → ✅ Redundant
-- ❌ `main.py` → ✅ Replaced by `main_fast.py`
-- ❌ `generate_test_data.py` → ✅ Integrated into `main_fast.py`
-
-**Result: 11 files removed, 8 essential files kept!**
 
 ## Features
 
@@ -182,7 +166,6 @@ This will start the smart scheduler that handles both daily updates and monthly 
 ## Recent Improvements
 
 ### ✅ Implemented
-- **File Consolidation**: Reduced from 19 files to 8 essential files
 - **Interactive Runner**: New `run.py` with menu interface
 - **Test Data Integration**: Automatic fallback when API fails
 - **Dual Chamber Fetching**: Now pulls bills from both House and Senate
