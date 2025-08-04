@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Congressional Committee Analysis</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .redirect-message {
+      background: #e3f2fd;
+      border: 1px solid #2196f3;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    .redirect-message h2 {
+      color: #1976d2;
+      margin-bottom: 10px;
+    }
+    .redirect-message p {
+      color: #424242;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #2196f3;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin: 10px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #1976d2;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🏛️ Congressional Committee Analysis</h1>
+    <p><strong>Redirecting to Committee Dashboard</strong></p>
+  </div>
+
+  <div class="redirect-message">
+    <h2>🔄 Redirecting to Committee Analysis</h2>
+    <p>
+      The main dashboard has been replaced with the comprehensive Committee Analysis dashboard. 
+      This provides detailed insights into congressional committee activity, bill processing workflows, 
+      and committee type distributions.
+    </p>
+    <p>
+      If you are not automatically redirected, please click the button below to access the Committee Analysis dashboard.
+    </p>
+    <a href="committee_dashboard.html" class="btn">📋 Go to Committee Analysis Dashboard</a>
+    <a href="index_auto.html" class="btn">🔄 Live Committee Updates</a>
+  </div>
+
+  <script>
+    // Auto-redirect to committee dashboard after 3 seconds
+    setTimeout(function() {
+      window.location.href = 'committee_dashboard.html';
+    }, 3000);
+  </script>
+</body>
+</html>

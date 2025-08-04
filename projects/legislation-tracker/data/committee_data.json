@@ -1,0 +1,303 @@
+{
+  "committees": {
+    "HSAS": {
+      "name": "Armed Services Committee",
+      "chamber": "House",
+      "type": "Standing",
+      "bill_count": 25,
+      "system_code": "HSAS",
+      "topics": [
+        "defense",
+        "military",
+        "veterans",
+        "national security"
+      ]
+    },
+    "HSJU": {
+      "name": "Judiciary Committee",
+      "chamber": "House",
+      "type": "Standing",
+      "bill_count": 30,
+      "system_code": "HSJU",
+      "topics": [
+        "criminal justice",
+        "immigration",
+        "constitutional rights",
+        "privacy"
+      ]
+    },
+    "HSED": {
+      "name": "Education and Labor Committee",
+      "chamber": "House",
+      "type": "Standing",
+      "bill_count": 20,
+      "system_code": "HSED",
+      "topics": [
+        "education",
+        "labor",
+        "workplace safety",
+        "student loans"
+      ]
+    },
+    "HSBU": {
+      "name": "Budget Committee",
+      "chamber": "House",
+      "type": "Standing",
+      "bill_count": 15,
+      "system_code": "HSBU",
+      "topics": [
+        "budget",
+        "spending",
+        "fiscal policy",
+        "appropriations"
+      ]
+    },
+    "HSIF": {
+      "name": "Financial Services Committee",
+      "chamber": "House",
+      "type": "Standing",
+      "bill_count": 18,
+      "system_code": "HSIF",
+      "topics": [
+        "banking",
+        "finance",
+        "insurance",
+        "housing"
+      ]
+    },
+    "HSGO": {
+      "name": "Oversight and Reform Committee",
+      "chamber": "House",
+      "type": "Standing",
+      "bill_count": 22,
+      "system_code": "HSGO",
+      "topics": [
+        "oversight",
+        "government reform",
+        "ethics",
+        "transparency"
+      ]
+    },
+    "HSEN": {
+      "name": "Energy and Commerce Committee",
+      "chamber": "House",
+      "type": "Standing",
+      "bill_count": 28,
+      "system_code": "HSEN",
+      "topics": [
+        "energy",
+        "healthcare",
+        "telecommunications",
+        "commerce"
+      ]
+    },
+    "HSFA": {
+      "name": "Foreign Affairs Committee",
+      "chamber": "House",
+      "type": "Standing",
+      "bill_count": 16,
+      "system_code": "HSFA",
+      "topics": [
+        "foreign policy",
+        "diplomacy",
+        "international relations"
+      ]
+    },
+    "HSAG": {
+      "name": "Agriculture Committee",
+      "chamber": "House",
+      "type": "Standing",
+      "bill_count": 12,
+      "system_code": "HSAG",
+      "topics": [
+        "agriculture",
+        "farming",
+        "rural development",
+        "food safety"
+      ]
+    },
+    "HSTC": {
+      "name": "Transportation and Infrastructure Committee",
+      "chamber": "House",
+      "type": "Standing",
+      "bill_count": 24,
+      "system_code": "HSTC",
+      "topics": [
+        "transportation",
+        "infrastructure",
+        "roads",
+        "bridges"
+      ]
+    },
+    "SSAS": {
+      "name": "Armed Services Committee",
+      "chamber": "Senate",
+      "type": "Standing",
+      "bill_count": 20,
+      "system_code": "SSAS",
+      "topics": [
+        "defense",
+        "military",
+        "veterans",
+        "national security"
+      ]
+    },
+    "SSJU": {
+      "name": "Judiciary Committee",
+      "chamber": "Senate",
+      "type": "Standing",
+      "bill_count": 25,
+      "system_code": "SSJU",
+      "topics": [
+        "criminal justice",
+        "immigration",
+        "constitutional rights",
+        "privacy"
+      ]
+    },
+    "SSHE": {
+      "name": "Health, Education, Labor, and Pensions Committee",
+      "chamber": "Senate",
+      "type": "Standing",
+      "bill_count": 18,
+      "system_code": "SSHE",
+      "topics": [
+        "healthcare",
+        "education",
+        "labor",
+        "pensions"
+      ]
+    },
+    "SSBU": {
+      "name": "Budget Committee",
+      "chamber": "Senate",
+      "type": "Standing",
+      "bill_count": 12,
+      "system_code": "SSBU",
+      "topics": [
+        "budget",
+        "spending",
+        "fiscal policy",
+        "appropriations"
+      ]
+    },
+    "SSBK": {
+      "name": "Banking, Housing, and Urban Affairs Committee",
+      "chamber": "Senate",
+      "type": "Standing",
+      "bill_count": 15,
+      "system_code": "SSBK",
+      "topics": [
+        "banking",
+        "housing",
+        "urban development",
+        "finance"
+      ]
+    },
+    "SSHR": {
+      "name": "Homeland Security and Governmental Affairs Committee",
+      "chamber": "Senate",
+      "type": "Standing",
+      "bill_count": 14,
+      "system_code": "SSHR",
+      "topics": [
+        "homeland security",
+        "government affairs",
+        "oversight"
+      ]
+    },
+    "SSEN": {
+      "name": "Environment and Public Works Committee",
+      "chamber": "Senate",
+      "type": "Standing",
+      "bill_count": 16,
+      "system_code": "SSEN",
+      "topics": [
+        "environment",
+        "public works",
+        "climate change",
+        "infrastructure"
+      ]
+    },
+    "SSFR": {
+      "name": "Foreign Relations Committee",
+      "chamber": "Senate",
+      "type": "Standing",
+      "bill_count": 13,
+      "system_code": "SSFR",
+      "topics": [
+        "foreign policy",
+        "diplomacy",
+        "international relations"
+      ]
+    },
+    "SSAG": {
+      "name": "Agriculture, Nutrition, and Forestry Committee",
+      "chamber": "Senate",
+      "type": "Standing",
+      "bill_count": 10,
+      "system_code": "SSAG",
+      "topics": [
+        "agriculture",
+        "nutrition",
+        "forestry",
+        "rural development"
+      ]
+    },
+    "SSFI": {
+      "name": "Finance Committee",
+      "chamber": "Senate",
+      "type": "Standing",
+      "bill_count": 22,
+      "system_code": "SSFI",
+      "topics": [
+        "taxation",
+        "trade",
+        "social security",
+        "medicare"
+      ]
+    }
+  },
+  "committee_types": {
+    "Standing": {
+      "count": 20,
+      "chambers": {
+        "House": 10,
+        "Senate": 10
+      }
+    },
+    "Select": {
+      "count": 4,
+      "chambers": {
+        "House": 2,
+        "Senate": 2
+      }
+    },
+    "Joint": {
+      "count": 2,
+      "chambers": {
+        "Joint": 2
+      }
+    }
+  },
+  "summary": {
+    "total_committees": 20,
+    "total_bills_processed": 375,
+    "house_committees": 10,
+    "senate_committees": 10,
+    "most_active_committee": {
+      "name": "Judiciary Committee",
+      "chamber": "House",
+      "type": "Standing",
+      "bill_count": 30,
+      "system_code": "HSJU",
+      "topics": [
+        "criminal justice",
+        "immigration",
+        "constitutional rights",
+        "privacy"
+      ]
+    },
+    "committee_types_count": 3
+  }
+}

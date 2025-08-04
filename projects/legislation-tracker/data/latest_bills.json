@@ -1,0 +1,152 @@
+[
+  {
+    "congress": 119,
+    "latestAction": {
+      "actionDate": "2025-07-31",
+      "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent."
+    },
+    "number": "362",
+    "originChamber": "Senate",
+    "originChamberCode": "S",
+    "title": "A resolution to provide for the printing of the Senate Manual for the One Hundred Nineteenth Congress.",
+    "type": "SRES",
+    "updateDate": "2025-08-01",
+    "updateDateIncludingText": "2025-08-01",
+    "url": "https://api.congress.gov/v3/bill/119/sres/362?format=json"
+  },
+  {
+    "congress": 119,
+    "latestAction": {
+      "actionDate": "2025-07-31",
+      "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent."
+    },
+    "number": "361",
+    "originChamber": "Senate",
+    "originChamberCode": "S",
+    "title": "A resolution designating August 16, 2025, \"National Airborne Day\".",
+    "type": "SRES",
+    "updateDate": "2025-08-01",
+    "updateDateIncludingText": "2025-08-01",
+    "url": "https://api.congress.gov/v3/bill/119/sres/361?format=json"
+  },
+  {
+    "congress": 119,
+    "latestAction": {
+      "actionDate": "2025-07-31",
+      "text": "Read twice and referred to the Committee on Small Business and Entrepreneurship."
+    },
+    "number": "2639",
+    "originChamber": "Senate",
+    "originChamberCode": "S",
+    "title": "A bill to require the Administrator of the Small Business Administration to establish and carry out a program that assists military spouses in establishing small business concerns, and for other purposes.",
+    "type": "S",
+    "updateDate": "2025-08-01",
+    "updateDateIncludingText": "2025-08-01",
+    "url": "https://api.congress.gov/v3/bill/119/s/2639?format=json"
+  },
+  {
+    "congress": 119,
+    "latestAction": {
+      "actionDate": "2025-07-31",
+      "text": "Read twice and referred to the Committee on Finance."
+    },
+    "number": "2638",
+    "originChamber": "Senate",
+    "originChamberCode": "S",
+    "title": "A bill to amend the Internal Revenue Code of 1986 to increase the low-income housing credit for rehabilitation expenditures for buildings achieving enhanced energy performance, and for other purposes.",
+    "type": "S",
+    "updateDate": "2025-08-01",
+    "updateDateIncludingText": "2025-08-01",
+    "url": "https://api.congress.gov/v3/bill/119/s/2638?format=json"
+  },
+  {
+    "congress": 119,
+    "latestAction": {
+      "actionDate": "2025-07-31",
+      "text": "Read twice and referred to the Committee on Energy and Natural Resources."
+    },
+    "number": "2637",
+    "originChamber": "Senate",
+    "originChamberCode": "S",
+    "title": "A bill to provide for the standardization, consolidation, and publication of data relating to public outdoor recreational use of Federal waterways among Federal land and water management agencies, and for other purposes.",
+    "type": "S",
+    "updateDate": "2025-08-01",
+    "updateDateIncludingText": "2025-08-01",
+    "url": "https://api.congress.gov/v3/bill/119/s/2637?format=json"
+  },
+  {
+    "congress": 119,
+    "latestAction": {
+      "actionDate": "2025-07-31",
+      "text": "Read twice and referred to the Committee on Environment and Public Works."
+    },
+    "number": "2635",
+    "originChamber": "Senate",
+    "originChamberCode": "S",
+    "title": "A bill to amend title 23, United States Code, to increase flexibility for emergency relief projects, and for other purposes.",
+    "type": "S",
+    "updateDate": "2025-08-01",
+    "updateDateIncludingText": "2025-08-01",
+    "url": "https://api.congress.gov/v3/bill/119/s/2635?format=json"
+  },
+  {
+    "congress": 119,
+    "latestAction": {
+      "actionDate": "2025-07-31",
+      "text": "Read twice and referred to the Committee on the Judiciary."
+    },
+    "number": "2634",
+    "originChamber": "Senate",
+    "originChamberCode": "S",
+    "title": "A bill to amend title 28, United States Code, to restore executive power to appoint United States attorneys.",
+    "type": "S",
+    "updateDate": "2025-08-01",
+    "updateDateIncludingText": "2025-08-01",
+    "url": "https://api.congress.gov/v3/bill/119/s/2634?format=json"
+  },
+  {
+    "congress": 119,
+    "latestAction": {
+      "actionDate": "2025-07-31",
+      "text": "Read twice and referred to the Committee on Finance."
+    },
+    "number": "72",
+    "originChamber": "Senate",
+    "originChamberCode": "S",
+    "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Internal Revenue Service relating to \"Estate Tax Closing Letter User Fee Update\".",
+    "type": "SJRES",
+    "updateDate": "2025-08-01",
+    "updateDateIncludingText": "2025-08-01",
+    "url": "https://api.congress.gov/v3/bill/119/sjres/72?format=json"
+  },
+  {
+    "congress": 119,
+    "latestAction": {
+      "actionDate": "2025-07-31",
+      "text": "Read twice and referred to the Committee on Homeland Security and Governmental Affairs."
+    },
+    "number": "2636",
+    "originChamber": "Senate",
+    "originChamberCode": "S",
+    "title": "A bill to prohibit individuals who are not citizens of the United States from voting in elections in the District of Columbia and to repeal the Local Resident Voting Rights Amendment Act of 2022.",
+    "type": "S",
+    "updateDate": "2025-08-01",
+    "updateDateIncludingText": "2025-08-01",
+    "url": "https://api.congress.gov/v3/bill/119/s/2636?format=json"
+  },
+  {
+    "congress": 119,
+    "latestAction": {
+      "actionDate": "2025-07-31",
+      "text": "Read twice and referred to the Committee on Commerce, Science, and Transportation."
+    },
+    "number": "2633",
+    "originChamber": "Senate",
+    "originChamberCode": "S",
+    "title": "A bill to institute a reduction in force moratorium at the National Oceanic and Atmospheric Administration, and for other purposes.",
+    "type": "S",
+    "updateDate": "2025-08-01",
+    "updateDateIncludingText": "2025-08-01",
+    "url": "https://api.congress.gov/v3/bill/119/s/2633?format=json"
+  }
+]
