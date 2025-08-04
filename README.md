@@ -1,12 +1,12 @@
-# Leah Moradi - Portfolio Website
+# Leah's Portfolio Website
 
-My personal portfolio showcasing data analysis projects, with a focus on electoral analysis and political data visualization.
+My personal portfolio showcases data analysis projects with a focus on electoral analysis and political data visualization.
 
-## 🌐 Live Demo
+## Live Demo
 
 Visit my portfolio at: https://leemoradi.github.io/my_portfolio_site/
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 my_portfolio_site/
@@ -24,7 +24,7 @@ my_portfolio_site/
         └── *.html            # Project documentation
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -52,7 +52,7 @@ my_portfolio_site/
    http://localhost:8000
    ```
 
-## 📊 Featured Project: Voting Analysis
+## Featured Project: Voting Analysis
 
 ### Overview
 I analyzed electoral data from Georgia and Texas to explore voting patterns, demographic correlations, and political trends across county-level data. This project combines my interests in political science with data analysis skills.
@@ -105,7 +105,7 @@ The analysis produces several visualizations that tell different stories about t
 - Demographic data including income and education statistics
 - Geographic information for county mapping and analysis
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Frontend:** HTML5, CSS3
 - **Data Analysis:** Python, Pandas, NumPy
@@ -113,7 +113,7 @@ The analysis produces several visualizations that tell different stories about t
 - **Data Processing:** Excel, CSV manipulation
 - **Version Control:** Git
 
-## 📈 Project Features
+## Project Features
 
 ### Portfolio Website
 - **Responsive Design:** Works well on mobile and desktop
@@ -127,7 +127,7 @@ The analysis produces several visualizations that tell different stories about t
 - **Statistical Insights:** Correlation analysis and demographic patterns
 - **Geographic Context:** County-level analysis with mapping considerations
 
-## 🔧 Adding New Projects
+## Adding New Projects
 
 1. Create a new directory in `projects/`
 2. Add your project files and analysis scripts
@@ -135,13 +135,13 @@ The analysis produces several visualizations that tell different stories about t
 4. Create a detailed project page (optional)
 5. Add any generated visualizations to the project directory
 
-## 📝 About Me
+## About Me
 
 I'm a rising junior at Tufts University majoring in Philosophy with minors in Political Science and History. My academic interests center on political theory, legal thought, and the intersection of philosophical ideas with current events. I'm especially drawn to questions about justice, rights, and power, and how they shape the legal and political systems we live under.
 
 Outside of academics, I am passionate about activism, particularly around healthcare accessibility and reproductive justice. I am interested in how policy and philosophy intersect in these areas, and how lived experience informs both.
 
-## 📧 Contact
+## Contact
 
 - **Email:** leahjmoradi@gmail.com
 - **School Email:** leah.moradi@tufts.edu
@@ -150,5 +150,3 @@ Outside of academics, I am passionate about activism, particularly around health
 - **Portfolio:** https://leemoradi.github.io/my_portfolio_site/
 
 ---
-
-**Note:** This portfolio is actively maintained and updated with new projects and analyses. The voting analysis project demonstrates my ability to work with complex data and present findings in an accessible, visually appealing format. 
