@@ -62,18 +62,18 @@ function createCommitteeCharts(data) {
         
         committeeActivityChart = new Chart(activityCtx, {
             type: 'bar',
-            data: {
+      data: {
                 labels: committeeNames,
-                datasets: [{
+        datasets: [{
                     label: 'Bill Count',
                     data: billCounts,
                     backgroundColor: 'rgba(54, 162, 235, 0.8)',
                     borderColor: 'rgba(54, 162, 235, 1)',
                     borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
+        }]
+      },
+      options: {
+        responsive: true,
                 maintainAspectRatio: false,
                 plugins: {
                     legend: {
@@ -84,20 +84,20 @@ function createCommitteeCharts(data) {
                         text: 'Top 10 Most Active Committees'
                     }
                 },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
                             text: 'Number of Bills'
                         },
                         ticks: {
                             stepSize: 5
-                        }
-                    }
-                }
             }
-        });
+          }
+        }
+      }
+    });
     }
     
     // Create Committee Types Chart

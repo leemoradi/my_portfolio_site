@@ -2,7 +2,7 @@
 
 A comprehensive web application that tracks recent bills and committee activity in the U.S. Congress using the Congress.gov API.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Option 1: Interactive Menu (Recommended)
 ```bash
@@ -178,7 +178,7 @@ This will start the smart scheduler that handles both daily updates and monthly 
 - **Clean User Interface**: No file listings, direct dashboard access
 - **Combined Data Fetching**: Single script for bills and committees
 
-### 🚀 Future Enhancements
+### Future Enhancements
 - **Interactive Filtering**: Filter by time range or topic
 - **Deployment**: GitHub Pages or Netlify deployment
 - **Bill Details**: Click to view full bill information
