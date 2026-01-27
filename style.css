@@ -4,9 +4,8 @@
   --color-bg: #fff;
   --color-bg-alt: #f7f7f9;
   --color-navy: #22223b;
-  /* Neutral accents */
-  --color-pink: #6b7280; /* neutral gray for buttons/hover */
-  --color-pink-light: var(--color-bg-alt); /* neutral light for contact/footer */
+  --color-pink: #e9a6b2;
+  --color-pink-light: #f7c6d0;
   --color-text: #222;
   --color-text-secondary: #555;
   --color-card: #fff;
@@ -100,7 +99,10 @@ h3 { font-size: 1.2rem; }
   border: 1.5px solid var(--color-pink);
 }
 
-/* Removed overly broad reset that previously unset nav styles */
+/* Remove old nav styles for header nav */
+header nav, .nav-links, .nav-links li, .nav-links a {
+  all: unset;
+}
 
 .btn {
   display: inline-flex;
